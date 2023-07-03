@@ -497,3 +497,13 @@ async function piscarBotaoJogarNovamente(querJogar){
     }
 }
 
+const returnButton = document.querySelector("#voltar");
+
+returnButton.onclick = () => {
+  const a = document.createElement("a");
+  a.style.display = "none";
+  a.href = "https://apcstart.vercel.app/Jogos";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
